@@ -1,4 +1,161 @@
-name: Rache Utils
-version: '1.0-SNAPSHOT'
-main: com.rache.racheUtils.RacheUtils
+name: VizierUtils
+version: ${project.version}
+main: com.viziercraft.utils.VizierUtilsPlugin
 api-version: '1.21'
+author: VizierCraft
+commands:
+  utils:
+    description: Main command for VizierUtils
+    usage: /<command> <reload|toggle|list|info>
+    permission: vizierutils.admin
+  heal:
+    description: Heal yourself
+    permission: vizierutils.heal
+  feed:
+    description: Feed yourself
+    permission: vizierutils.feed
+  back:
+    description: Teleport back to your previous location
+    permission: vizierutils.back
+  home:
+    description: Teleport to a home
+    permission: vizierutils.home
+  sethome:
+    description: Set a home
+    permission: vizierutils.sethome
+  hat:
+    description: Wear the item in your hand as a hat
+    permission: vizierutils.hat
+  workbench:
+    description: Open a virtual workbench
+    permission: vizierutils.workbench
+  trash:
+    description: Open a trash inventory
+    permission: vizierutils.trash
+  enderchest:
+    description: Open your ender chest
+    permission: vizierutils.enderchest
+  vanish:
+    description: Toggle vanish
+    permission: vizierutils.vanish
+  freeze:
+    description: Toggle freeze on a player
+    permission: vizierutils.freeze
+  invsee:
+    description: View a player's inventory
+    permission: vizierutils.invsee
+  mute:
+    description: Toggle mute on a player
+    permission: vizierutils.mute
+  kick:
+    description: Kick a player
+    permission: vizierutils.kick
+  ban:
+    description: Ban a player
+    permission: vizierutils.ban
+  tempban:
+    description: Temporarily ban a player
+    permission: vizierutils.tempban
+  chatspy:
+    description: Toggle chat spy mode
+    permission: vizierutils.chatspy
+  tpa:
+    description: Request to teleport to a player
+    permission: vizierutils.tpa
+  tpahere:
+    description: Request a player to teleport to you
+    permission: vizierutils.tpahere
+  tpaccept:
+    description: Accept a teleport request
+    permission: vizierutils.tpaccept
+  tpdeny:
+    description: Deny a teleport request
+    permission: vizierutils.tpdeny
+  broadcast:
+    description: Broadcast a message to the server
+    permission: vizierutils.broadcast
+permissions:
+  vizierutils.admin:
+    description: Access to /utils command
+    default: op
+  vizierutils.toggle:
+    description: Toggle features
+    default: op
+  vizierutils.reload:
+    description: Reload the plugin
+    default: op
+  vizierutils.list:
+    description: View active features
+    default: op
+  vizierutils.info:
+    description: View plugin information
+    default: true
+  vizierutils.heal:
+    description: Use /heal
+    default: op
+  vizierutils.feed:
+    description: Use /feed
+    default: op
+  vizierutils.back:
+    description: Use /back
+    default: true
+  vizierutils.home:
+    description: Use /home
+    default: true
+  vizierutils.sethome:
+    description: Use /sethome
+    default: true
+  vizierutils.hat:
+    description: Use /hat
+    default: op
+  vizierutils.workbench:
+    description: Use /workbench
+    default: true
+  vizierutils.trash:
+    description: Use /trash
+    default: true
+  vizierutils.enderchest:
+    description: Use /enderchest
+    default: op
+  vizierutils.vanish:
+    description: Use /vanish
+    default: op
+  vizierutils.vanish.see:
+    description: See vanished players
+    default: op
+  vizierutils.freeze:
+    description: Use /freeze
+    default: op
+  vizierutils.invsee:
+    description: Use /invsee
+    default: op
+  vizierutils.mute:
+    description: Use /mute
+    default: op
+  vizierutils.kick:
+    description: Use /kick
+    default: op
+  vizierutils.ban:
+    description: Use /ban
+    default: op
+  vizierutils.tempban:
+    description: Use /tempban
+    default: op
+  vizierutils.chatspy:
+    description: Use /chatspy
+    default: op
+  vizierutils.tpa:
+    description: Use /tpa
+    default: true
+  vizierutils.tpahere:
+    description: Use /tpahere
+    default: true
+  vizierutils.tpaccept:
+    description: Accept teleport requests
+    default: true
+  vizierutils.tpdeny:
+    description: Deny teleport requests
+    default: true
+  vizierutils.broadcast:
+    description: Use /broadcast
+    default: op

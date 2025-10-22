@@ -1,0 +1,76 @@
+features:
+  heal: true
+  feed: true
+  back: true
+  home: true
+  sethome: true
+  hat: true
+  workbench: true
+  trash: true
+  enderchest: true
+  vanish: true
+  freeze: true
+  invsee: true
+  mute: true
+  kick: true
+  ban: true
+  tempban: true
+  chatspy: true
+  tpa: true
+  tpahere: true
+  tpaccept: true
+  tpdeny: true
+  broadcast: true
+  anti-phantom: true
+  no-creeper-grief: true
+  anti-fire-spread: true
+  disable-enderman-grief: true
+  weather-lock: false
+  time-lock: false
+  auto-day: false
+  auto-clear-weather: false
+  clear-lag: true
+  tps-monitor: true
+  auto-message: true
+  motd: true
+  join-quit: true
+
+weather-lock:
+  world: world
+  state: CLEAR
+
+time-lock:
+  world: world
+  time: DAY
+  interval: 200
+
+auto-day:
+  world: world
+  interval-minutes: 10
+
+auto-clear-weather:
+  world: world
+  interval-minutes: 10
+
+clear-lag:
+  interval-seconds: 180
+
+tps-monitor:
+  interval-seconds: 60
+  threshold: 18.5
+
+auto-message:
+  interval-seconds: 120
+  messages:
+    - '&bVizierUtils &f- hoş geldiniz!'
+    - '&eDiscord: &fdiscord.gg/vizier'
+
+motd:
+  message: '&aVizierCraft Sunucusu'
+
+join-quit:
+  join: '&a%player% sunucuya katıldı.'
+  quit: '&c%player% sunucudan çıktı.'
+  send-welcome-title: true
+  title: '&aHoş geldin, %player%!'
+  subtitle: '&7İyi oyunlar'
