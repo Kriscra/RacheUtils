@@ -1,0 +1,4 @@
+name: Rache Utils
+version: '1.0-SNAPSHOT'
+main: com.rache.racheUtils.RacheUtils
+api-version: '1.21'
